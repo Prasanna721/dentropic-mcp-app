@@ -5,9 +5,9 @@ const OPENDENTAL_API_URL =
   process.env.OPENDENTAL_API_URL || "http://localhost:8000";
 
 const TOOL_TIMEOUTS = {
-  "get-patients": 15 * 60_000,
-  "get-patient-chart": 15 * 60_000,
-  "get-reports": 15 * 60_000,
+  "get-patients": 30 * 60_000,
+  "get-patient-chart": 30 * 60_000,
+  "get-reports": 30 * 60_000,
 } as const;
 
 const server = new MCPServer({
